@@ -399,7 +399,7 @@
                 <h1 style="font-size:62px; color:#ff0000; text-shadow:0 0 30px #ff0000; margin-bottom:20px;">O5 CLEARANCE ONLY</h1>
                 <p style="color:#00ff41; font-size:28px; margin-bottom:40px;">LEVEL 5 // THAUMIEL PROTOCOL ACTIVE</p>
                 <button onclick="startBoot()">INITIALIZE SECURE BOOT SEQUENCE</button>
-                <p style="margin-top:40px; font-size:18px; color:#444;">USER: KYTH STARK // KEYCARD O5-██</p>
+                <p style="margin-top:40px; font-size:18px; color:#444;">USER: SIKE STARK // KEYCARD O5-██</p>
             </div>
         </div>
     </div>
@@ -445,7 +445,7 @@
                     </div>
 
                     <div class="warning-block">
-                        UNAUTHORIZED ACCESS TO THIS TERMINAL CONSTITUTES A CLASS-V INFOHAZARD EVENT AND WILL TRIGGER AUTOMATIC AMNESTIC DISPERSAL PROTOCOL 7-OPAL. USER <span style="color:#ffff00;">KYTH STARK / O5-██</span> IS THE SOLE AUTHORIZED OPERATOR OF THIS NODE. YOU HAVE BEEN WARNED.
+                        UNAUTHORIZED ACCESS TO THIS TERMINAL CONSTITUTES A CLASS-V INFOHAZARD EVENT AND WILL TRIGGER AUTOMATIC AMNESTIC DISPERSAL PROTOCOL 7-OPAL. USER <span style="color:#ffff00;">SIKE STARK / O5-██</span> IS THE SOLE AUTHORIZED OPERATOR OF THIS NODE. YOU HAVE BEEN WARNED.
                     </div>
 
                     <div class="classified-section">
@@ -532,7 +532,7 @@
     <div id="terminal-screen" class="hidden">
         <div class="screen crt">
             <div class="header">
-                SCP FOUNDATION • O5-kysk • LEVEL 5 THAUMIEL • KYTH STARK
+                SCP FOUNDATION • O5-kysk • LEVEL 5 THAUMIEL • SIKE STARK
             </div>
             <div id="terminal-output"></div>
             <div style="background:#111; padding:12px 20px; display:flex; align-items:center; border-top:3px solid #00ff41;">
@@ -553,7 +553,7 @@
             "SCP FOUNDATION SECURE OS v19-THAUMIEL INITIALIZING...",
             "BIOS v0.██ CHECKSUM: [OK]",
             "NEURAL INTERFACE CONNECTED",
-            "O5 KEYCARD DETECTED: KYTH STARK",
+            "O5 KEYCARD DETECTED: SIKE STARK",
             "VERIFYING THAUMIEL CLEARANCE LEVEL 5...",
             "[PASS] O5-██ ACCESS GRANTED",
             "LOADING MEMETIC KILL AGENT FILTERS...",
@@ -629,7 +629,7 @@
         const pass = document.getElementById('password').value.trim();
         const status = document.getElementById('login-status');
         
-        if (pass === 'tsukyth1302') {
+        if (pass === 'tsusike1302') {
             status.style.color = '#00ff41';
             status.textContent = 'KEYCARD ACCEPTED • O5 CLEARANCE CONFIRMED';
             
@@ -696,7 +696,7 @@
             return;
         } 
         else if (lower === 'whoami') {
-            response = `USER: Kyth Stark<br>USERNAME: kysk<br>CLEARANCE: O5 COUNCIL<br>ACCESS: Level 5 Thaumiel<br>STATUS: dangerously pretty & untouchable`;
+            response = `USER: Sike Stark<br>USERNAME: kysk<br>CLEARANCE: O5 COUNCIL<br>ACCESS: Level 5 Thaumiel<br>STATUS: dangerously pretty & untouchable`;
         } 
         else if (lower === 'status') {
             response = breachActive 
@@ -750,9 +750,9 @@
             response = `NYX-7S ACCESS REQUESTED<br>ENTER PASSPHRASE NOW: `;
             setTimeout(() => {
                 const passphrase = prompt("NYX-7S PASSPHRASE:");
-                if (passphrase && passphrase.trim().toLowerCase() === 'kynyx') {
+                if (passphrase && passphrase.trim().toLowerCase() === 'nyx7s') {
                     output.innerHTML += `<div class="line" style="color:#ff00ff;">[NYX-7S] AUTHORIZED → REDIRECTING TO NYX THE SLAYER CODEX...</div>`;
-                    setTimeout(() => { window.location.href = "https://kythstark.notion.site/Nyx-The-Slayer-Codex-208c2ac4f5ec806fb2eaf7dbd239a3ac"; }, 1200);
+                    setTimeout(() => { window.location.href = "https://sike7sz.notion.site/Nyx-The-Slayer-Codex-208c2ac4f5ec806fb2eaf7dbd239a3ac"; }, 1200);
                 } else {
                     output.innerHTML += `<div class="line" style="color:#ff0000;">[NYX-7S] PASSPHRASE REJECTED • MEMETIC KILL AGENT IN 3...2...</div>`;
                 }
@@ -763,9 +763,9 @@
             response = `TWILIGHT-0K ACCESS REQUESTED<br>ENTER PASSPHRASE NOW: `;
             setTimeout(() => {
                 const passphrase = prompt("TWILIGHT-0K PASSPHRASE:");
-                if (passphrase && passphrase.trim().toLowerCase() === 'kytwi') {
+                if (passphrase && passphrase.trim().toLowerCase() === 'twi0s') {
                     output.innerHTML += `<div class="line" style="color:#ff69b4;">[TWILIGHT-0K] AUTHORIZED → REDIRECTING TO TWILIGHT SYLK CODEX...</div>`;
-                    setTimeout(() => { window.location.href = "https://kythstark.notion.site/Twilight-Sylk-Codex-31bc2ac4f5ec802b8ba1db9806c537be"; }, 1200);
+                    setTimeout(() => { window.location.href = "https://sike7sz.notion.site/Twilight-Sylk-Codex-31bc2ac4f5ec802b8ba1db9806c537be"; }, 1200);
                 } else {
                     output.innerHTML += `<div class="line" style="color:#ff0000;">[TWILIGHT-0K] ACCESS DENIED • ANOMALOUS ENTITY DETECTED</div>`;
                 }
