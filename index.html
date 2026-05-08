@@ -422,8 +422,8 @@
                 <div class="login-left">
                     <div class="login-box">
                         <h2 style="color:#ff0000;">O5 TERMINAL ACCESS</h2>
-                        <p style="margin:20px 0; color:#00ff41;">USERNAME: <span style="color:#ffff00;">kysk</span></p>
-                        <input type="text" id="username" value="kysk" readonly>
+                        <p style="margin:20px 0; color:#00ff41;">USERNAME: <span style="color:#ffff00;">sike7</span></p>
+                        <input type="text" id="username" value="sike7" readonly>
                         <p style="margin:10px 0 5px; color:#00ff41;">PASSWORD:</p>
                         <input type="password" id="password" placeholder="ENTER KEY" onkeydown="if(event.key==='Enter') checkLogin()">
                         <button onclick="checkLogin()" style="margin-top:20px; padding:12px 40px; font-size:24px;">SWIPE O5 KEYCARD</button>
@@ -435,7 +435,7 @@
                 <div class="login-right">
                     <div class="classified-header">
                         ⚠ CLASSIFIED ⚠<br>
-                        <span style="font-size:17px; letter-spacing:3px;">DOCUMENT O5-AUTH/KYSK/██-███-████ // REV. 14</span>
+                        <span style="font-size:17px; letter-spacing:3px;">DOCUMENT O5-AUTH/SIKE7/██-███-████ // REV. 14</span>
                     </div>
 
                     <div class="clearance-bar">
@@ -532,11 +532,11 @@
     <div id="terminal-screen" class="hidden">
         <div class="screen crt">
             <div class="header">
-                SCP FOUNDATION • O5-kysk • LEVEL 5 THAUMIEL • SIKE STARK
+                SCP FOUNDATION • O5-sike7 • LEVEL 5 THAUMIEL • SIKE STARK
             </div>
             <div id="terminal-output"></div>
             <div style="background:#111; padding:12px 20px; display:flex; align-items:center; border-top:3px solid #00ff41;">
-                <span class="prompt" style="margin-right:8px;">O5-kysk@foundation:~$</span>
+                <span class="prompt" style="margin-right:8px;">O5-sike7@foundation:~$</span>
                 <input id="terminal-input" type="text" autocomplete="off" onkeydown="if(event.key==='Enter') handleCommand()">
             </div>
         </div>
@@ -576,7 +576,7 @@
             "BUFFER PURGED [OK]",
             "FINAL INTEGRITY CHECK...",
             "ALL SYSTEMS NOMINAL",
-            "WELCOME TO THE FOUNDATION, O5-kysk",
+            "WELCOME TO THE FOUNDATION, O5-sike7",
             "BOOT COMPLETE. TRANSFERRING TO LOGIN..."
         ];
 
@@ -644,7 +644,7 @@
                 
                 const output = document.getElementById('terminal-output');
                 output.innerHTML = `
-                    <div class="line" style="color:#ffff00;">[SYSTEM] O5-kysk LOGGED IN • THAUMIEL PROTOCOL ACTIVE</div>
+                    <div class="line" style="color:#ffff00;">[SYSTEM] O5-sike7 LOGGED IN • THAUMIEL PROTOCOL ACTIVE</div>
                     <div class="line">Type <span style="color:#ffff00;">help</span> for commands, you absolute madlad.</div>
                 `;
             }, 800);
@@ -666,7 +666,7 @@
         
         const line = document.createElement('div');
         line.className = 'line';
-        line.innerHTML = `<span class="prompt">O5-kysk@foundation:~$</span> ${cmd}`;
+        line.innerHTML = `<span class="prompt">O5-sike7@foundation:~$</span> ${cmd}`;
         output.appendChild(line);
         
         let response = '';
@@ -696,7 +696,7 @@
             return;
         } 
         else if (lower === 'whoami') {
-            response = `USER: Sike Stark<br>USERNAME: kysk<br>CLEARANCE: O5 COUNCIL<br>ACCESS: Level 5 Thaumiel<br>STATUS: dangerously pretty & untouchable`;
+            response = `USER: Sike Stark<br>USERNAME: sike7<br>CLEARANCE: O5 COUNCIL<br>ACCESS: Level 5 Thaumiel<br>STATUS: dangerously pretty & untouchable`;
         } 
         else if (lower === 'status') {
             response = breachActive 
@@ -738,7 +738,7 @@
             response = new Date().toUTCString() + " [FOUNDATION UTC]";
         } 
         else if (lower === 'logout') {
-            response = `O5-kysk session terminated. Don't let the door hit your cute ass.`;
+            response = `O5-sike7 session terminated. Don't let the door hit your cute ass.`;
             setTimeout(() => location.reload(), 1400);
         } 
         else if (lower === 'reboot') {
